@@ -6,7 +6,7 @@ import ExchangeRate from './ExchangeRate.js';
 
 function getExchangeRate(response) {
   if (response)
-    $('.showCost').html(response.conversion_result);
+    $('.showCost').html(`<p>${response.conversion_result} ${response.target_code}</p>`);
   }
 
 async function makeApiCall (suppliedCurrency, desiredCurrency, transactionAmount) {
