@@ -6,7 +6,7 @@ import ExchangeRate from './ExchangeRate.js';
 
 function getExchangeRate(response) {
   if (response)
-    $('.showCost').append(response.conversion_result);
+    $('.showCost').html(response.conversion_result);
   }
 
 async function makeApiCall (suppliedCurrency, desiredCurrency, transactionAmount) {
@@ -16,9 +16,10 @@ async function makeApiCall (suppliedCurrency, desiredCurrency, transactionAmount
 
 $(document).ready(function() {
     $("#submit").click(() => {
-      let transactionAmount =1;
+      let transactionAmount = $('#transactionAmount').val();
       let suppliedCurrency = $('#suppliedCurrency').val();
       let desiredCurrency = $('#desiredCurrency').val();
+      console.log(transactionAmount);
       makeApiCall(suppliedCurrency, desiredCurrency, transactionAmount);
     });
-  })
+  });
