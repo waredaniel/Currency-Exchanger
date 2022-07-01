@@ -1,31 +1,33 @@
-# (Application Name)
+# Currency-Exchanger
 
-#### (Brief Description of Application)
+#### Currency-Exchanger is a handy tool for converting between world currencies using ExchangeRate-API
 
-#### By (Your Name Here)
+#### By Daniel Ware
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
-
-## Description
+* HTML5
+* Javascript
+* jQuery
+* CSS/Bootstrap
+* Node.js
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone repository
+* Open Currency-Exchanger in VS Code
+* npm install
+* npm run build
+* npm run start
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* None
 
 ## License
 
+MIT  (c) 2022
+
 ## Contact Information
+
+Daniel Ware <waredanielb@gmail.com>

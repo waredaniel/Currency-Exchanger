@@ -19,7 +19,6 @@ $(document).ready(function() {
       let transactionAmount = $('#transactionAmount').val();
       let suppliedCurrency = $('#suppliedCurrency').val();
       let desiredCurrency = $('#desiredCurrency').val();
-      console.log(transactionAmount);
       makeApiCall(suppliedCurrency, desiredCurrency, transactionAmount);
     });
   });

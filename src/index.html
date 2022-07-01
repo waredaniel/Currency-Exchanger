@@ -4,15 +4,20 @@
 </head>
 
 <body>
-  <div>
+  <div class="jumbotron">
+    <h2>Convert Your Currency!</h2>
+  </div>
+  <div class="box">
     <label for="suppliedCurrency"> Type of currency you have:</label>
     <input id="suppliedCurrency" type="text" size="7">
+    <br>
     <label for="transactionAmount">Enter Amount:</label>
     <input id="transactionAmount" type="number">
+    <br>
     <label for="desiredCurrency"> Type of currency you want:</label>
     <input id="desiredCurrency" type="text" size="7">
     <button class="btn btn-primary" id="submit">Get Price</button>
   </div>
-    <div>Cost: <span class="showCost"></span></div>
+    <div class="box"><span class="showCost"></span></div>
 </body>
 </html>
