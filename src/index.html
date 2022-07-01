@@ -8,16 +8,43 @@
     <h2>Convert Your Currency!</h2>
   </div>
   <div class="box">
-    <label for="suppliedCurrency"> Type of currency you have:</label>
-    <input id="suppliedCurrency" type="text" size="7">
+    <label for="suppliedCurrency"> Currency to Convert From:</label>
+    <!-- <input id="suppliedCurrency" type="text" size="7"> -->
+    <select id="suppliedCurrency">
+      <option value="USD">USD -United States Dollar</option>
+      <option value="CAD">CAD -Canadian Dollar</option>
+      <option value="GBP">GBP -Pound Sterling</option>
+      <option value="EUR">EUR -Euro</option>
+      <option value="JPY">JPY- Japanese Yen</option>
+      <option value="AUD">AUD -Austrailian Dollar</option>
+      <option value="RUB">RUB -Russian Ruble</option>
+      <option value="HKD">HKD -Hong Kong Dollar</option>
+      <option value="CHF">CHF -Swiss Franc</option>
+      <option value="CNY">CNY -Chinese Renminbi</option>
+      <option value="NZD">NZD -New Zealand Dollar</option>
+    </select>
     <br>
     <label for="transactionAmount">Enter Amount:</label>
     <input id="transactionAmount" type="number" min="0">
     <br>
-    <label for="desiredCurrency"> Type of currency you want:</label>
-    <input id="desiredCurrency" type="text" size="7">
-    <button class="btn btn-primary" id="submit">Get Price</button>
-  </div>
-    <div class="box"><span class="showCost"></span></div>
+    <label for="desiredCurrency"> Currency to Convert To:</label>
+    <select id="desiredCurrency">
+      <option value="CAD">CAD -Canadian Dollar</option>
+      <option value="GBP">GBP -Pound Sterling</option>
+      <option value="EUR">EUR -Euro</option>
+      <option value="JPY">JPY- Japanese Yen</option>
+      <option value="AUD">AUD -Austrailian Dollar</option>
+      <option value="RUB">RUB -Russian Ruble</option>
+      <option value="HKD">HKD -Hong Kong Dollar</option>
+      <option value="CHF">CHF -Swiss Franc</option>
+      <option value="CNY">CNY -Chinese Renminbi</option>
+      <option value="NZD">NZD -New Zealand Dollar</option>
+      <option value="USD">USD -United States Dollar</option>
+    </select>
+    </div>
+    <div class="box">
+      <button class="btn btn-primary" id="submit">Convert</button>
+      <p><span class="showCost"></span></p>
+    </div>
 </body>
 </html>
