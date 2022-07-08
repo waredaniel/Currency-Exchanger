@@ -16,14 +16,14 @@ function getExchangeRate(response) {
 
 async function makeApiCall (suppliedCurrency, desiredCurrency, transactionAmount) {
   const response = await ExchangeRate.getExchangeRate(suppliedCurrency, desiredCurrency, transactionAmount);
-    getExchangeRate(response);
+  getExchangeRate(response);
 }
 
 $(document).ready(function() {
-    $("#submit").click(() => {
-      let transactionAmount = $('#transactionAmount').val();
-      let suppliedCurrency = $('#suppliedCurrency').val();
-      let desiredCurrency = $('#desiredCurrency').val();
-      makeApiCall(suppliedCurrency, desiredCurrency, transactionAmount);
-    });
+  $("#submit").click(() => {
+    let transactionAmount = $('#transactionAmount').val();
+    let suppliedCurrency = $('#suppliedCurrency').val();
+    let desiredCurrency = $('#desiredCurrency').val();
+    makeApiCall(suppliedCurrency, desiredCurrency, transactionAmount);
   });
+});
