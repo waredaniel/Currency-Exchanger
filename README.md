@@ -14,8 +14,10 @@
 
 ## Setup/Installation Requirements
 
-* Clone repository
-* Open Currency-Exchanger in VS Code
+* Sign up for a free API key at app.exchangerate-api.com/signup
+* Clone repository from github
+* Open Currency-Exchanger directory in VS Code
+* Create an .env file in the root directory and add "API_KEY:[your key here]"
 * npm install
 * npm run build
 * npm run start
